@@ -1,10 +1,9 @@
-﻿using SendMail.Model;
+﻿using MailSend_DotNETCore8WebAPI.Models;
 
-namespace SendMail.Interface
+namespace MailSend_DotNETCore8WebAPI.Interfaces
 {
-    public interface ImailService
+    public interface IMailSendService
     {
-        Task SendEmailAsAsync(MailRequest mailRequest);
-
+        public Task SendEmailAsync(MailSendRequest mailrequest);
     }
 }
